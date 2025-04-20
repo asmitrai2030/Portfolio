@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional portfolio website of a full-stack web developer." />
+  <meta name="author" content="Anushka Rai" />
+  <title>Anushka Rai - Full-Stack Web Developer</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#fun" class="nav-link">Fun</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="name">Ansuhka Rai</h1>
+          <h2 class="subtitle" aria-live="polite"></h2>
+          <p class="intro">I am a passionate full-stack web developer crafting modern, responsive, and interactive web experiences.</p>
+          <button class="btn view-work-btn" aria-label="View My Work">View My Work</button>
+        </div>
+        <div class="hero-photo">
+          <img src="myportfolio.jpeg" alt="Professional photo of Your Name" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p class="bio">
+        I am a dedicated web developer with a passion for building scalable and efficient web applications. My journey started with curiosity and has grown into a fulfilling career.
+      </p>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon html-icon" aria-hidden="true"></span>HTML</li>
+          <li><span class="skill-icon css-icon" aria-hidden="true"></span>CSS</li>
+          <li><span class="skill-icon js-icon" aria-hidden="true"></span>JavaScript</li>
+          <li><span class="skill-icon react-icon" aria-hidden="true"></span>React</li>
+          <li><span class="skill-icon node-icon" aria-hidden="true"></span>Node.js</li>
+        </ul>
+      </div>
+      <a href="Anushka Rai Resume.pdf" class="btn download-resume" download aria-label="Download Resume">Download Resume</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio</h2>
+      <div class="project-grid">
+        <article class="project-card" tabindex="0" aria-label="Project One">
+          <img src="/Users/asmitrai/Desktop/portfolio-website/DevConnect.jpeg" alt="DevConnect.jpeg" />
+          <h3>Project One</h3>
+          <p class="tags">React, API, MongoDB</p>
+          <button class="btn read-more-btn" aria-haspopup="dialog" aria-controls="modal-project1">Read More</button>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="Project Two">
+          <img src="/Users/asmitrai/Desktop/portfolio-website/project2.jpeg" alt="project2.jpeg" />
+          <h3>Project Two</h3>
+          <p class="tags">JavaScript, Node.js, Express</p>
+          <button class="btn read-more-btn" aria-haspopup="dialog" aria-controls="modal-project2">Read More</button>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="Project Three">
+          <img src="/Users/asmitrai/Desktop/portfolio-website/project3.jpeg" alt="project3.jpeg" />
+          <h3>Project Three</h3>
+          <p class="tags">HTML, CSS, GSAP</p>
+          <button class="btn read-more-btn" aria-haspopup="dialog" aria-controls="modal-project3">Read More</button>
+        </article>
+      </div>
+      <!-- Modals for projects -->
+      <dialog id="modal-project1" class="project-modal" aria-modal="true" role="dialog" aria-labelledby="modal1-title" aria-describedby="modal1-desc">
+        <h3 id="modal1-title">Project One</h3>
+        <p id="modal1-desc">A full-stack React application with API integration and MongoDB backend.</p>
+        <button class="btn close-modal">Close</button>
+      </dialog>
+      <dialog id="modal-project2" class="project-modal" aria-modal="true" role="dialog" aria-labelledby="modal2-title" aria-describedby="modal2-desc">
+        <h3 id="modal2-title">Project Two</h3>
+        <p id="modal2-desc">A Node.js and Express server with JavaScript frontend.</p>
+        <button class="btn close-modal">Close</button>
+      </dialog>
+      <dialog id="modal-project3" class="project-modal" aria-modal="true" role="dialog" aria-labelledby="modal3-title" aria-describedby="modal3-desc">
+        <h3 id="modal3-title">Project Three</h3>
+        <p id="modal3-desc">A stylish website built with HTML, CSS, and GSAP animations.</p>
+        <button class="btn close-modal">Close</button>
+      </dialog>
+    </section>
+
+    <!-- Fun Section -->
+    <section id="fun" class="fun-section">
+      <h2>Tech Stack I Love</h2>
+      <div class="tech-icons">
+        <span class="tech-icon html-icon" aria-label="HTML5" role="img"></span>
+        <span class="tech-icon css-icon" aria-label="CSS3" role="img"></span>
+        <span class="tech-icon js-icon" aria-label="JavaScript" role="img"></span>
+        <span class="tech-icon react-icon" aria-label="React" role="img"></span>
+        <span class="tech-icon node-icon" aria-label="Node.js" role="img"></span>
+      </div>
+      <h3>Currently Learning</h3>
+      <p>TypeScript, GraphQL, Docker</p>
+      <h3>Code & Coffee</h3>
+      <p>Fun fact: I drink at least 3 cups of coffee a day while coding!</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <h2>Testimonials</h2>
+      <div class="testimonial-cards">
+        <blockquote class="testimonial-card">
+          <p>"An exceptional developer who delivered our project on time and beyond expectations."</p>
+          <footer>- Client A</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"Creative, reliable, and a pleasure to work with."</p>
+          <footer>- Client B</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"Highly skilled and communicative throughout the entire process."</p>
+          <footer>- Client C</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn submit-btn">Send</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:youremail@example.com" aria-label="Email"><span class="icon email-icon" aria-hidden="true"></span></a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon github-icon" aria-hidden="true"></span></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon linkedin-icon" aria-hidden="true"></span></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" aria-label="Twitter"><span class="icon twitter-icon" aria-hidden="true"></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Your Name. Built with hand-coded HTML, CSS & JavaScript.</p>
+  </footer>
+</body>
+</html>
